@@ -72,3 +72,28 @@ footer {
     display: flex;
     width: 40%;
 }
+
+.mem-controls-labels {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.mem-controls-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem; 
+
+}
+
+.control-marker {
+    width: 1rem;
+    height: 1rem;
+    border: 0.2rem solid antiquewhite;
+    background-color: white;
+}
+
+.mem-controls-label:hover > .control-marker {
+    background-color: darkgray;
+}
