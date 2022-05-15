@@ -17,6 +17,10 @@ footer {
     width: 100%;
 }
 
+.mem-control {
+    display: none;
+}
+
 .slider-title {
     padding: 0;
     margin: 0;
@@ -33,6 +37,7 @@ footer {
     max-width: 35vw;
     background-color: white;
     margin: 0 auto;
+    border: 1rem solid white;
 }
 
 .slider-wrapper {
@@ -43,6 +48,7 @@ footer {
 .mem-images {
     display: flex;
     width: 400%;
+    transition: 1s;
 }
 
 .mem {
@@ -96,4 +102,31 @@ footer {
 
 .mem-controls-label:hover > .control-marker {
     background-color: darkgray;
+}
+
+#slider-1:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-1] .control-marker,
+#slider-2:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-2] .control-marker,
+#slider-3:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-3] .control-marker,
+#slider-4:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-4] .control-marker {
+    background-color: antiquewhite;
+}
+
+#slider-1:checked ~ .slider-wrapper .mem-images,
+#slider-1:checked ~ .mem-descriptions-wrapper .mem-descriptions {
+    transform: translate(0%, 0%);
+}
+
+#slider-2:checked ~ .slider-wrapper .mem-images,
+#slider-2:checked ~ .mem-descriptions-wrapper .mem-descriptions {
+    transform: translate(-25%, 0%);
+}
+
+#slider-3:checked ~ .slider-wrapper .mem-images,
+#slider-3:checked ~ .mem-descriptions-wrapper .mem-descriptions {
+    transform: translate(-50%, 0%);
+}
+
+#slider-4:checked ~ .slider-wrapper .mem-images,
+#slider-4:checked ~ .mem-descriptions-wrapper .mem-descriptions {
+    transform: translate(-75%, 0%);
 }
