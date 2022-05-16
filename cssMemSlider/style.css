@@ -34,7 +34,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 35vw;
+    max-width: 70vh;
     background-color: white;
     margin: 0 auto;
     border: 1rem solid white;
