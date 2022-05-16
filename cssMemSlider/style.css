@@ -71,7 +71,7 @@ footer {
 .mem-descriptions {
     display: flex;
     width: 400%;
-    
+    transition: 1s;
 }
 
 .mem-description {
@@ -116,7 +116,7 @@ footer {
 #slider-3:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-3] .control-marker,
 #slider-4:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-4] .control-marker {
     background-color: antiquewhite;
-    transition: 0.5s;
+    transition: 0.55s;
 }
 
 #slider-1:checked ~ .slider-wrapper .mem-images,
