@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
 }
 
 header,
@@ -68,6 +71,7 @@ footer {
 .mem-descriptions {
     display: flex;
     width: 400%;
+    
 }
 
 .mem-description {
@@ -90,6 +94,7 @@ footer {
     align-items: center;
     width: 2rem;
     height: 2rem; 
+    cursor: pointer;
 
 }
 
@@ -98,6 +103,8 @@ footer {
     height: 1rem;
     border: 0.2rem solid antiquewhite;
     background-color: white;
+    transition: 0.7s;
+
 }
 
 .mem-controls-label:hover > .control-marker {
@@ -109,6 +116,7 @@ footer {
 #slider-3:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-3] .control-marker,
 #slider-4:checked ~ .mem-controls-wrapper .mem-controls-labels label[for=slider-4] .control-marker {
     background-color: antiquewhite;
+    transition: 0.5s;
 }
 
 #slider-1:checked ~ .slider-wrapper .mem-images,
@@ -129,4 +137,18 @@ footer {
 #slider-4:checked ~ .slider-wrapper .mem-images,
 #slider-4:checked ~ .mem-descriptions-wrapper .mem-descriptions {
     transform: translate(-75%, 0%);
+}
+
+.header-container,
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.github-link {
+    color: black;
+    text-decoration: none;
 }
