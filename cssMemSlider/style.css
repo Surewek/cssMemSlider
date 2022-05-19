@@ -36,7 +36,7 @@ footer {
 .slider-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 70vh;
     background-color: white;
     margin: 0 auto;
@@ -81,7 +81,7 @@ footer {
 .mem-controls-wrapper {
     display: flex;
     justify-content: flex-end;
-    width: 40%;
+    width: 50%;
 }
 
 .mem-controls-labels {
